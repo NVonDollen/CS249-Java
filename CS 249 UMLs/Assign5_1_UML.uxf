@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>60</y>
+      <w>470</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>Circle2D
+-
+-x: double
+-y: double
+-radius: double
+-
++Circle()
++Circle(newX: double, newY: double, newRadius: double)
++getRadius(): double
++getArea(): double
++getPreimeter(): double
++contains(double x, double y): boolean
++contains(Circle2D circle): boolean
++overlaps(Circle2D circle): boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>27</y>
+      <w>360</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>Weapon
+-
+-damage: double
+-
++Weapon(weaponName: String, weaponDamage: double)
++getWeaponDamage(): double
++setWeaponDamage(NewWeaponDamage: double): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>540</y>
+      <w>423</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>Player
+-
+-ArrayList(): Item
+-positionX: int
+-positionY: int
+-health: int
+-currentWeapon: String
+-
++playerPosition(newX: int, newY: int)
++getPosition(): int
++setPosition(setX: int, setY: int): void
++getHealth(): int
++setHealth(setHealth: int): void
++getCurrentWeapon(): String
++setCurrentWeapon(setWeapon: String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>288</y>
+      <w>504</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>Item
+-
+-name: String
+-weight: double
+-value: double
+-
++Item()
++Item(newName: String, newWeight: double, newValue: double, newDamage: double)
++getWeight(): double
++getValue(): double
++getName(): String
++setWeight(newWeight: double): void
++setValue(newValue: double): void
++setName(newName: String): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>207</y>
+      <w>45</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;30.0;10.0</additional_attributes>
+  </element>
+</diagram>
