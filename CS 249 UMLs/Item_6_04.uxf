@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>10</y>
+      <w>450</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>Item
+-
+-name: String
+-weight: double
+-value: double
+-
++Item()
++Item(newName: double, newWeight: double, newValue: double)
++getName(): String
++getWeight(): double
++getValue(): double
++setName(newName: String): void
++setWeight(newWeight: double): void
++setValue(newValue: double): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
